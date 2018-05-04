@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavTopicsComponent } from './nav-topics/nav-topics.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { NewsComponent } from './news/news.component';
+import { GearComponent } from './gear/gear.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NewsComponent } from './news/news.component';
     AppComponent,
     NavTopicsComponent,
     HighlightsComponent,
-    NewsComponent
+    NewsComponent,
+    GearComponent
   ],
   imports: [
     BrowserModule

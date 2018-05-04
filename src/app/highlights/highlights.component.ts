@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
 
 @Component({
@@ -6,11 +6,16 @@ import { Story } from '../models/story.model';
   templateUrl: './highlights.component.html',
   styleUrls: ['./highlights.component.css']
 })
-export class HighlightsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class HighlightsComponent {
+  @Input() childStoryList: Story[];
 }
+
+// export class HighlightsComponent implements OnInit {
+//
+//   constructor() { }
+//
+//   ngOnInit() {
+//   }
+//
+// }

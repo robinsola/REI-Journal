@@ -32,5 +32,9 @@ export class AppComponent {
     new Story('How to ship a bike', 'REI Staff', 'April 3, 2018', 'full-length article here', 2),
     new Story('How to have a more eco-friendly camping trip', 'Aer Parris', 'March 27, 2018', 'full-length article here', 4),
   ];
+  selectedStory = null;
+  readStory(clickedStory) {
+    this.selectedStory = clickedStory;
+  }
 
   }

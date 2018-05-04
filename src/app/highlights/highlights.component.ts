@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
 
 @Component({
@@ -9,6 +9,11 @@ import { Story } from '../models/story.model';
 
 export class HighlightsComponent {
   @Input() childStoryList: Story[];
+  @Output() clickSender = new EventEmitter();
+
+  editBtnClicked(storyToRead: Story) {
+    this.clickSender.emit(storyToRead);
+  }
 }
 
 // export class HighlightsComponent implements OnInit {

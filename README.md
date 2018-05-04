@@ -13,6 +13,7 @@ Below is an image from my notebook separating the main webpage into its componen
 * __news-component, gear-component, skills-component:__ all include a clickable image to read full-length article. Has (title, author, date) and teaser-text from article.
 * __full-length-component:__ individual story with title, author, date, full-length article, and rating.
 * __comment-component:__ area under full-length-component. Includes text-area to type out comment about that article, and submit button.
+* __stories-component:__ when clicking the SEE ALL button at the bottom of the main page, a list of all stories will show. Includes photo, title, author, date and teaser. Each is clickable to show its full-length-component.
 
 ## Installation
 * Clone project folder in terminal: `$ git clone` repository url

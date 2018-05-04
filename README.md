@@ -2,9 +2,16 @@
 Remake of [REI Co-op Journal](https://www.rei.com/blog), generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3. May 2018, Robin Sola.
 
 ## Description
+The REI Co-op Journal is a blog type website where members can share their stories and knowledge on a number of outdoor lifestyle topics, including camping, climbing, snow sports, travel, and more. Members are able to log into the website, read news stories, how-to articles, and about top-rated gear related to any of the topics. Members can also post comments and rate each of the stories they read.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Planning
+Below is an image from my notebook separating the main webpage into its components, including detailed descriptions of what each component will contain.
+![](readme-plan.JPG)
+
+## Installation
+* Clone project folder in terminal: `$ git clone` repository url
+* In terminal, run `$ npm install` in project folder home directory
+* In terminal, run `$ ng serve --open` to view in browser
 
 ## Code scaffolding
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -18,5 +25,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies Used
+* HTML
+* CSS/BOOTSTRAP
+* JavaScript/JQUERY
+* npm and webpack
+* Angular
+
+#### Contact
+Contact me through github with comments/questions or email: rsolarms@gmail.com
+
+#### License
+Copyright (c) 2018 **_Robin Sola_**

@@ -7,6 +7,12 @@ The REI Co-op Journal is a blog type website where members can share their stori
 ## Planning
 Below is an image from my notebook separating the main webpage into its components, including detailed descriptions of what each component will contain.
 ![](readme-plan.JPG)
+* __story-model:__ class Story { constructor(public title: string, public author: string, public date: string, public article: string, public rating: number }
+*  __nav-component:__ list of links for outdoor topics across top page with login button capability. Each link displays a list of stories.
+* __highlights-component:__ includes 3 highlighted stories(title, author, date), each clickable to read the  full-length article.
+* __news-component, gear-component, skills-component:__ all include a clickable image to read full-length article. Has (title, author, date) and teaser-text from article.
+* __full-length-component:__ individual story with title, author, date, full-length article, and rating.
+* __comment-component:__ area under full-length-component. Includes text-area to type out comment about that article, and submit button.
 
 ## Installation
 * Clone project folder in terminal: `$ git clone` repository url

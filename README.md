@@ -5,6 +5,18 @@ Remake of [REI Co-op Journal](https://www.rei.com/blog), generated with [Angular
 The REI Co-op Journal is a blog type website where members can share their stories and knowledge on a number of outdoor lifestyle topics, including camping, climbing, snow sports, travel, and more. Blog members are able to log into the website, read news stories, how-to articles, and about top-rated gear related to any of the outdoor topics. Members can also post comments and give ratings each of the stories they read.
 
 ## Planning
+> As a user, I want to see a list of outdoor lifestyle topics so I can choose one to focus on.
+
+> As a user, I want to see more popular highly rated articles before searching for other articles.
+
+> As a user, I want to be able to see a list of articles with introduction text about each one so I don't have to open them to find out what they are about.
+
+> As a user, I want to see an image associated with each article so my eyes can flow with ease throughout the page.
+
+> As a user, I want to write comments on each article so I can interact with the author and other users.
+
+> As a user, I want to rate each article so I can be involved in voting up my favorite articles to be highly rated.
+
 Below is an image from my notebook separating the main webpage into its components, including detailed descriptions of what each component will contain.
 ![](readme-plan.JPG)
 * __story-model:__ class Story { constructor(public title: string, public author: string, public date: string, public article: string, public rating: number }
@@ -14,6 +26,7 @@ Below is an image from my notebook separating the main webpage into its componen
 * __full-length-component:__ individual story with title, author, date, full-length article, and rating.
 * __comment-component:__ area under full-length-component. Includes text-area to type out comment about that article, and submit button.
 * __stories-component:__ when clicking the SEE ALL button at the bottom of the main page, a list of all stories will show. Includes photo, title, author, date and teaser. Each is clickable to show its full-length-component.
+
 
 ## Installation
 * Clone project folder in terminal: `$ git clone` repository url

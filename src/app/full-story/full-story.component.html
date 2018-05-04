@@ -2,21 +2,24 @@
   <h2>{{childSelectedStory.title}}</h2>
   <h4>{{childSelectedStory.author}}, {{childSelectedStory.date}}, {{childSelectedStory.rating}} stars</h4>
   <p>{{childSelectedStory.article}}</p>
-  <div>
+  <div class="display-comments">
+    <p (sendStory)="addStory($event)"></p>
+  </div>
 <!-- need to have comments as separate component - probably a sub-component of full-story? -->
+  <div>
     <h2>Comments</h2>
     <label>add comment:</label>
-    <input #newComment>
+    <input #newUserComment>
   </div>
   <div>
     <label>rate article:</label>
-    <select #newRating>
+    <select #newUserRating>
       <option [value]="1"> 1 star </option>
       <option [value]="2"> 2 stars </option>
       <option [value]="3"> 3 stars </option>
       <option [value]="4"> 4 stars </option>
       <option [value]="5"> 5 stars </option>
     </select>
-    <button (click)="submitForm(newComment.value, newRating.value)">add</button>
+    <button (click)="submitForm(newUserComment.value, newUserRating.value)">add</button>
   </div>
 </div>

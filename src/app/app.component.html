@@ -3,10 +3,11 @@
 </div>
 <app-nav-topics></app-nav-topics>
 <h3>Highlights</h3>
-<app-highlights [childStoryList]="masterStoryList"></app-highlights>
+<app-highlights [childStoryList]="masterStoryList" (clickSender)="readStory($event)"></app-highlights>
 <h3>News</h3>
-<app-news [childStoryList]="newsStoryList"></app-news>
+<app-news [childStoryList]="newsStoryList" (clickSender)="readStory($event)"></app-news>
 <h3>Gear</h3>
-<app-gear [childStoryList]="gearStoryList"></app-gear>
+<app-gear [childStoryList]="gearStoryList" (clickSender)="readStory($event)"></app-gear>
 <h3>Skills</h3>
-<app-skills [childStoryList]="skillsStoryList"></app-skills>
+<app-skills [childStoryList]="skillsStoryList" (clickSender)="readStory($event)"></app-skills>
+<app-full-story [childSelectedStory]="selectedStory"></app-full-story>

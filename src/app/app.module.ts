@@ -8,6 +8,7 @@ import { HighlightsComponent } from './highlights/highlights.component';
 import { NewsComponent } from './news/news.component';
 import { GearComponent } from './gear/gear.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FullStoryComponent } from './full-story/full-story.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SkillsComponent } from './skills/skills.component';
     HighlightsComponent,
     NewsComponent,
     GearComponent,
-    SkillsComponent
+    SkillsComponent,
+    FullStoryComponent
   ],
   imports: [
     BrowserModule

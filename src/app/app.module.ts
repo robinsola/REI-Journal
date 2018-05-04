@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavTopicsComponent } from './nav-topics/nav-topics.component';
 import { HighlightsComponent } from './highlights/highlights.component';
+import { NewsComponent } from './news/news.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavTopicsComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule

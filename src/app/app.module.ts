@@ -7,6 +7,7 @@ import { NavTopicsComponent } from './nav-topics/nav-topics.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { NewsComponent } from './news/news.component';
 import { GearComponent } from './gear/gear.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { GearComponent } from './gear/gear.component';
     NavTopicsComponent,
     HighlightsComponent,
     NewsComponent,
-    GearComponent
+    GearComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule

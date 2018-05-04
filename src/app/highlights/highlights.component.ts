@@ -11,7 +11,7 @@ export class HighlightsComponent {
   @Input() childStoryList: Story[];
   @Output() clickSender = new EventEmitter();
 
-  editBtnClicked(storyToRead: Story) {
+  readBtnClicked(storyToRead: Story) {
     this.clickSender.emit(storyToRead);
   }
 }

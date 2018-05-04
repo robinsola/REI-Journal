@@ -1,8 +1,10 @@
 <div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
+  <h1>{{ title }}</h1>
 </div>
 <app-nav-topics></app-nav-topics>
+<h3>Highlights</h3>
 <app-highlights [childStoryList]="masterStoryList"></app-highlights>
-<app-news [childStoryList]="NewsStoryList"></app-news>
+<h3>News</h3>
+<app-news [childStoryList]="newsStoryList"></app-news>
+<h3>Gear</h3>
+<h3>Skills</h3>

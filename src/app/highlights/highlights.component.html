@@ -1,3 +1,1 @@
-<ul>
-  <li *ngFor="let currentStory of childStoryList">{{currentStory.title}}<br>{{currentStory.author}}, {{currentStory.date}}<br><button (click)="readBtnClicked(currentStory)">read more</button></li>
-</ul>
+<div *ngFor="let currentStory of childStoryList">{{currentStory.title}}<br>{{currentStory.author}}, {{currentStory.date}}<br><button (click)="readBtnClicked(currentStory)">read more</button></div>

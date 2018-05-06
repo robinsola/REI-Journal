@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-highlights',
@@ -11,9 +12,11 @@ export class HighlightsComponent {
   @Input() childStoryList: Story[];
   @Output() clickSender = new EventEmitter();
 
+  constructor(private router: Router){}
+
   readBtnClicked(storyToRead: Story) {
-    this.clickSender.emit(storyToRead);
-  }
+    this.router.navigate(['childStoryList', storyToRead.id]);
+  };
 }
 
 // export class HighlightsComponent implements OnInit {

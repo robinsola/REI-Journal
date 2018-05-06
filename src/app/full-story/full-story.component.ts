@@ -2,23 +2,31 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { StoryService } from '../story.service';
 
 @Component({
   selector: 'app-full-story',
   templateUrl: './full-story.component.html',
-  styleUrls: ['./full-story.component.css']
+  styleUrls: ['./full-story.component.css'],
+  providers: [StoryService]
 })
 
 export class FullStoryComponent implements OnInit {
   @Input() childSelectedStory: Story;
-  childSelectedStoryID: number = null;
+  childSelectedStoryID: number;
+  storyToDisplay: Story;
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private storyService: StoryService
+  ) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.childSelectedStoryID = parseInt(urlParameters['id']);
     });
+    this.storyToDisplay = this.storyService.getStoryById(this.childSelectedStoryID)
   }
   // @Output() sendStory = new EventEmitter;
 

@@ -1,12 +1,37 @@
 <div style="text-align:center">
   <img src="assets/rei-logo.png" alt="rei logo">
+  <p>Home Page</p>
+</div>
+
+<div class="nav">
+  <ul>
+    <li>camp</li>
+    <li>hike</li>
+    <li>climb</li>
+    <li>cycle</li>
+    <li>paddle</li>
+    <li>run</li>
+    <li>snow</li>
+    <li>travel</li>
+    <li>stewardship</li>
+    <li>films</li>
+    <li>login</li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+<!-- <div style="text-align:center">
+  <img src="assets/rei-logo.png" alt="rei logo">
 </div>
 
 <router-outlet></router-outlet>
 
 <app-nav-topics></app-nav-topics>
 <h3>Highlights</h3>
-<app-highlights [childStoryList]="masterStoryList" (clickSender)="readStory($event)"></app-highlights>
+<app-highlights [childStoryList]="masterStoryList" (clickSender)="readStory($event)"></app-highlights> -->
 <!-- <h3>News</h3>
 <app-news [childStoryList]="newsStoryList" (clickSender)="readStory($event)"></app-news>
 <h3>Gear</h3>

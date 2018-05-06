@@ -5,7 +5,7 @@ import { FullStoryComponent } from './full-story/full-story.component';
 
 const appRoutes: Routes = [
   {
-    path: 'highlights',
+    path: '',
     component: HighlightsComponent
   },
   {

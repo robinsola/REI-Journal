@@ -9,6 +9,7 @@ import { NewsComponent } from './news/news.component';
 import { GearComponent } from './gear/gear.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FullStoryComponent } from './full-story/full-story.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FullStoryComponent } from './full-story/full-story.component';
     FullStoryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

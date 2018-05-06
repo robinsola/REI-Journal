@@ -19,7 +19,7 @@ export class HighlightsComponent implements OnInit {
   ngOnInit() {
     this.childStoryList = this.storyService.getStories()
   }
-  
+
   readBtnClicked(storyToRead: Story) {
     this.router.navigate(['childStoryList', storyToRead.id]);
   };

@@ -1,28 +1,30 @@
-<h2>This id is: {{childSelectedStoryID}}</h2>
-<h3>{{storyToDisplay.title}}</h3>
+<h2>{{storyToDisplay.title}}</h2>
+<p>{{storyToDisplay.author}}, {{storyToDisplay.date}}</p>
+<p>Rating: {{storyToDisplay.rating}} stars</p>
+<p>{{storyToDisplay.article}}</p>
 
-<div *ngIf="childSelectedStory">
+<div>
+   <h2>Comments</h2>
+   <label>add comment:</label>
+   <input #newUserComment>
+ </div>
+ <div>
+   <label>rate article:</label>
+   <select #newUserRating>
+     <option [value]="1"> 1 star </option>
+     <option [value]="2"> 2 stars </option>
+     <option [value]="3"> 3 stars </option>
+     <option [value]="4"> 4 stars </option>
+     <option [value]="5"> 5 stars </option>
+   </select>
+   <button (click)="submitForm(newUserComment.value, newUserRating.value)">add</button>
+ </div>
+
+<!-- <div *ngIf="childSelectedStory">
   <h2>{{childSelectedStory.title}}</h2>
   <h4>{{childSelectedStory.author}}, {{childSelectedStory.date}}, {{childSelectedStory.rating}} stars</h4>
   <p>{{childSelectedStory.article}}</p>
   <div class="display-comments">
     <p (sendStory)="addStory($event)"></p>
   </div>
-<!-- need to have comments as separate component - probably a sub-component of full-story? -->
-  <div>
-    <h2>Comments</h2>
-    <label>add comment:</label>
-    <input #newUserComment>
-  </div>
-  <div>
-    <label>rate article:</label>
-    <select #newUserRating>
-      <option [value]="1"> 1 star </option>
-      <option [value]="2"> 2 stars </option>
-      <option [value]="3"> 3 stars </option>
-      <option [value]="4"> 4 stars </option>
-      <option [value]="5"> 5 stars </option>
-    </select>
-    <button (click)="submitForm(newUserComment.value, newUserRating.value)">add</button>
-  </div>
-</div>
+</div> -->

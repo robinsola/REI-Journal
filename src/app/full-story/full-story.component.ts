@@ -12,8 +12,7 @@ import { StoryService } from '../story.service';
 })
 
 export class FullStoryComponent implements OnInit {
-  @Input() childSelectedStory: Story;
-  childSelectedStoryID: number;
+  storyId: number;
   storyToDisplay: Story;
 
   constructor(
@@ -24,9 +23,9 @@ export class FullStoryComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.childSelectedStoryID = parseInt(urlParameters['id']);
+      this.storyId = parseInt(urlParameters['id']);
     });
-    this.storyToDisplay = this.storyService.getStoryById(this.childSelectedStoryID)
+    this.storyToDisplay = this.storyService.getStoryById(this.storyId)
   }
   // @Output() sendStory = new EventEmitter;
 
@@ -35,12 +34,3 @@ export class FullStoryComponent implements OnInit {
   //   this.sendStory.emit(newStory);
   // }
 }
-
-// export class FullStoryComponent implements OnInit {
-//
-//   constructor() { }
-//
-//   ngOnInit() {
-//   }
-//
-// }

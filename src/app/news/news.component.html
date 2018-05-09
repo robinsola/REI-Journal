@@ -1,4 +1,5 @@
 <h3>News</h3>
-<ul>
-  <li *ngFor="let story of stories">{{story.title}}<br>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button></li>
+<ul *ngFor="let story of stories">
+  <li *ngIf="story.category === 'news'">{{story.title}}<br>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button>
+  </li>
 </ul>

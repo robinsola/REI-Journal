@@ -13,7 +13,7 @@ import { StoryService } from '../story.service';
 export class HighlightsComponent implements OnInit {
     stories: Story[];
     currentRoute: string = this.router.url;
-
+    
 
   constructor(private router: Router, private storyService: StoryService){}
 

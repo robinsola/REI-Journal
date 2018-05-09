@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'childStoryList/:id',
+    path: 'stories/:id',
     component: FullStoryComponent
   }
 ];

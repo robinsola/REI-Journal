@@ -1,4 +1,4 @@
 <h3>News</h3>
 <ul>
-  <li *ngFor="let currentStory of childStoryList">{{currentStory.title}}<br>{{currentStory.author}}, {{currentStory.date}}<br><button (click)="readBtnClicked(currentStory)">read more</button></li>
+  <li *ngFor="let story of stories">{{story.title}}<br>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button></li>
 </ul>

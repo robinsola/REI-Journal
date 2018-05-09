@@ -25,7 +25,7 @@ export class FullStoryComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.storyId = parseInt(urlParameters['id']);
     });
-    this.storyToDisplay = this.storyService.getStoryById(this.storyId)
+    this.storyToDisplay = this.storyService.getStoryById(this.storyId);
   }
   // @Output() sendStory = new EventEmitter;
 

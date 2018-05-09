@@ -12,12 +12,11 @@ export class StoryService {
     return STORIES;
   }
 
-  getStoryById(childSelectedStoryID: number){
+  getStoryById(storyId: number){
     for(let i=0; i<= STORIES.length - 1; i++) {
-      if (STORIES[i].id === childSelectedStoryID) {
+      if (STORIES[i].id === storyId) {
         return STORIES[i];
       }
     }
   }
-
 }

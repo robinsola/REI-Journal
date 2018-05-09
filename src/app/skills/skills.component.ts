@@ -1,27 +1,27 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
+import { Router } from '@angular/router';
+import { StoryService } from '../story.service';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
+  providers: [StoryService]
 })
 
 export class SkillsComponent {
-  @Input() childStoryList: Story[];
-  @Output() clickSender = new EventEmitter();
+  stories: Story[];
+  currentRoute: string = this.router.url;
 
-  readBtnClicked(storyToRead: Story) {
-    this.clickSender.emit(storyToRead);
+
+  constructor(private router: Router, private storyService: StoryService){}
+
+  ngOnInit() {
+    this.stories = this.storyService.getStories()
   }
+
+  readDetails(clickedStory: Story) {
+    this.router.navigate(['stories', clickedStory.id]);
+  };
 }
-
-
-// export class SkillsComponent implements OnInit {
-//
-//   constructor() { }
-//
-//   ngOnInit() {
-//   }
-//
-// }

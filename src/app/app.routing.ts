@@ -1,12 +1,12 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HighlightsComponent } from './highlights/highlights.component';
+import { HomeComponent } from './home/home.component';
 import { FullStoryComponent } from './full-story/full-story.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: HighlightsComponent
+    component: HomeComponent
   },
   {
     path: 'childStoryList/:id',

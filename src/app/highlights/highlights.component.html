@@ -1,6 +1,4 @@
 <h3>Highlights</h3>
-<!-- <div *ngFor="let currentStory of childStoryList">{{currentStory.title}}<br>{{currentStory.author}}, {{currentStory.date}}<br><button (click)="readBtnClicked(currentStory)">read more</button></div> -->
-
 <ul *ngFor="let story of stories">
   <li *ngIf="story.category === 'highlight'">{{story.title}}<br>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button>
   </li>

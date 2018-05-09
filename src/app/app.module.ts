@@ -10,6 +10,7 @@ import { GearComponent } from './gear/gear.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FullStoryComponent } from './full-story/full-story.component';
 import { routing } from './app.routing';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { routing } from './app.routing';
     NewsComponent,
     GearComponent,
     SkillsComponent,
-    FullStoryComponent
+    FullStoryComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

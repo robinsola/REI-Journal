@@ -1,9 +1,5 @@
 <h3>Highlights</h3>
 <ul *ngFor="let story of stories | async">
-  <li *ngIf="story.category === 'highlight'">{{story.title}}<br>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button>
+  <li *ngIf="story.category === 'highlight'"><img src="{{album.imageUrl}}"><h4>{{story.title}}</h4>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button>
   </li>
 </ul>
-
-<!-- <div *ngFor="let story of stories | async" (click)="readDetails(story)">
-    <h3><em>{{story.title}}</em> by {{story.author}}</h3>
-</div> -->

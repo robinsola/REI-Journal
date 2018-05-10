@@ -1,4 +1,5 @@
 <h2>{{(storyToDisplay | async)?.title}}</h2>
+<img src="{{(storyToDisplay | async)?.imageUrl}}">
 <p>{{(storyToDisplay | async)?.author}}, {{(storyToDisplay | async)?.date}}</p>
 <p>Rating: {{(storyToDisplay | async)?.rating}} stars</p>
 <p>{{(storyToDisplay | async)?.article}}</p>

@@ -11,6 +11,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { FullStoryComponent } from './full-story/full-story.component';
 import { routing } from './app.routing';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,10 +30,13 @@ export const firebaseConfig = {
     GearComponent,
     SkillsComponent,
     FullStoryComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule

@@ -3,6 +3,7 @@ import { Story } from '../models/story.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { StoryService } from '../story.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-full-story',
@@ -12,8 +13,8 @@ import { StoryService } from '../story.service';
 })
 
 export class FullStoryComponent implements OnInit {
-  storyId: number;
-  storyToDisplay: Story;
+  storyId: string;
+  storyToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,14 +24,8 @@ export class FullStoryComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.storyId = parseInt(urlParameters['id']);
+      this.storyId = urlParameters['id'];
     });
     this.storyToDisplay = this.storyService.getStoryById(this.storyId);
   }
-  // @Output() sendStory = new EventEmitter;
-
-  // submitForm(title: string, author: string, date: string, article: string, rating: string, comment: string, id: number) {
-  //   let newStory: Story = new Story(title, author, date, article, parseInt(rating), comment, id);
-  //   this.sendStory.emit(newStory);
-  // }
 }

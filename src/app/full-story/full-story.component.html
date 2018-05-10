@@ -1,7 +1,7 @@
-<h2>{{storyToDisplay.title}}</h2>
-<p>{{storyToDisplay.author}}, {{storyToDisplay.date}}</p>
-<p>Rating: {{storyToDisplay.rating}} stars</p>
-<p>{{storyToDisplay.article}}</p>
+<h2>{{(storyToDisplay | async)?.title}}</h2>
+<p>{{(storyToDisplay | async)?.author}}, {{(storyToDisplay | async)?.date}}</p>
+<p>Rating: {{(storyToDisplay | async)?.rating}} stars</p>
+<p>{{(storyToDisplay | async)?.article}}</p>
 
 <div>
    <h2>Comments</h2>
@@ -17,14 +17,4 @@
      <option [value]="4"> 4 stars </option>
      <option [value]="5"> 5 stars </option>
    </select>
-   <button (click)="submitForm(newUserComment.value, newUserRating.value)">add</button>
  </div>
-
-<!-- <div *ngIf="childSelectedStory">
-  <h2>{{childSelectedStory.title}}</h2>
-  <h4>{{childSelectedStory.author}}, {{childSelectedStory.date}}, {{childSelectedStory.rating}} stars</h4>
-  <p>{{childSelectedStory.article}}</p>
-  <div class="display-comments">
-    <p (sendStory)="addStory($event)"></p>
-  </div>
-</div> -->

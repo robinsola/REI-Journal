@@ -22,7 +22,7 @@ export class SkillsComponent implements OnInit {
     this.stories = this.storyService.getStories()
   }
 
-  readDetails(clickedStory: Story) {
-    this.router.navigate(['stories', clickedStory.id]);
+  readDetails(clickedStory) {
+    this.router.navigate(['stories', clickedStory.$key]);
   };
 }

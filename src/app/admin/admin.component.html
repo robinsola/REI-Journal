@@ -22,10 +22,10 @@
 <div>
   <label>Category:</label>
   <select #newCategory>
-    <option [value]="highlight">Highlight</option>
-    <option [value]="gear">Gear</option>
-    <option [value]="news">News</option>
-    <option [value]="skills">Skills</option>
+    <option [ngValue]="highlight">highlight</option>
+    <option [ngValue]="gear">gear</option>
+    <option [ngValue]="news">news</option>
+    <option [ngValue]="skills">skills</option>
   </select>
 </div>
-<button (click)="submitForm(newTitle.value, newAuthor.value, newDate.value, newArticle.value, newCategory.value); newTitle.value=''; newAuthor.value=''; newDate.value=''; newArticle.value=''; newCategory.value=''">submit</button>
+<button (click)="submitForm(newTitle.value, newAuthor.value, newDate.value, newArticle.value, newCategory.value); newTitle.value=''; newAuthor.value=''; newDate.value=''; newArticle.value=''">submit</button>

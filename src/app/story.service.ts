@@ -20,6 +20,6 @@ export class StoryService {
   }
 
   getStoryById(storyId: string){
-    return this.database.object('stories/' + storyId);
+    return this.database.object('/stories/' + storyId);
   }
 }

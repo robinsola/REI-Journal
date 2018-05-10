@@ -1,3 +1,4 @@
 export class Story {
-  constructor(public title: string, public author: string, public date: string, public article: string, public rating: number, public category: string) { }
+  public rating: number
+  constructor(public title: string, public author: string, public date: string, public article: string, public category: string) { }
 }

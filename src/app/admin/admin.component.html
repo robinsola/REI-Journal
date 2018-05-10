@@ -1,0 +1,31 @@
+<h3>Create New Story</h3>
+<div>
+  <label>Title:</label>
+  <br>
+  <input #newTitle>
+</div>
+<div>
+  <label>Author:</label>
+  <br>
+  <input #newAuthor>
+</div>
+<div>
+  <label>Date:</label>
+  <br>
+  <input #newDate>
+</div>
+<div>
+  <label>Article:</label>
+  <br>
+  <textarea #newArticle></textarea>
+</div>
+<div>
+  <label>Category:</label>
+  <select #newCategory>
+    <option [value]="highlight">Highlight</option>
+    <option [value]="gear">Gear</option>
+    <option [value]="news">News</option>
+    <option [value]="skills">Skills</option>
+  </select>
+</div>
+<button (click)="submitForm(newTitle.value, newAuthor.value, newDate.value, newArticle.value, newCategory.value); newTitle.value=''; newAuthor.value=''; newDate.value=''; newArticle.value=''; newCategory.value=''">submit</button>

@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
 import { Router } from '@angular/router';
 import { StoryService } from '../story.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-highlights',
@@ -11,9 +12,9 @@ import { StoryService } from '../story.service';
 })
 
 export class HighlightsComponent implements OnInit {
-    stories: Story[];
+    stories: FirebaseListObservable<any[]>;
     currentRoute: string = this.router.url;
-    
+
 
   constructor(private router: Router, private storyService: StoryService){}
 

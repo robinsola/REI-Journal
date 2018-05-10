@@ -1,5 +1,5 @@
 <h3>Gear</h3>
-<ul *ngFor="let story of stories">
+<ul *ngFor="let story of stories | async">
   <li *ngIf="story.category === 'gear'">{{story.title}}<br>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button>
   </li>
 </ul>

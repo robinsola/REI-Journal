@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Story } from '../models/story.model';
 import { Router } from '@angular/router';
 import { StoryService } from '../story.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-skills',
@@ -10,8 +11,8 @@ import { StoryService } from '../story.service';
   providers: [StoryService]
 })
 
-export class SkillsComponent {
-  stories: Story[];
+export class SkillsComponent implements OnInit {
+  stories: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
 

@@ -1,5 +1,8 @@
-<h3>Highlights</h3>
 <div *ngFor="let story of stories | async">
   <div *ngIf="story.category === 'highlight'"><img src="{{story.imageUrl}}"><h4>{{story.title}}</h4>{{story.author}}, {{story.date}}<br><button (click)="readDetails(story)">read more</button>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit [selectedStory]="story"></app-edit>
+    </div>
+    <hr>
   </div>
 </div>

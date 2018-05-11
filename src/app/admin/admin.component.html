@@ -34,3 +34,11 @@
   <input #newImageUrl>
 </div>
 <button (click)="submitForm(newTitle.value, newAuthor.value, newDate.value, newArticle.value, newCategory.value, newImageUrl.value); newTitle.value=''; newAuthor.value=''; newDate.value=''; newArticle.value=''; newImageUrl.value=''">submit</button>
+
+<div>
+<h3>Make Edits</h3>
+  <app-highlights></app-highlights>
+  <app-news></app-news>
+  <app-gear></app-gear>
+  <app-skills></app-skills>
+</div>

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { EditComponent } from './edit/edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     SkillsComponent,
     FullStoryComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

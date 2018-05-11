@@ -8,21 +8,33 @@ li {
   display: inline;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 a {
+  padding: 10px 15px;
   color: black;
-  padding: 10px 10px;
+  text-decoration: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
 a:hover {
   background-color: black;
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
+
+/* a:active {
+  text-decoration: none;
+} */
 
 .logo img {
   text-align: center;
-  width: 200px;
-  height: auto
+  width: 300px;
+  height: auto;
+  margin: 25px 0;
 }

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Story } from './models/story.model';
-// import { STORIES } from './mock-articles';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -19,7 +18,13 @@ export class StoryService {
     this.stories.push(newStory);
   }
 
-  getStoryById(storyId: string){
+  getStoryById(storyId: string) {
     return this.database.object('/stories/' + storyId);
   }
+
+  updateStory(localUpdatedStory) {
+    let storyEntryInFirebase = this.getStoryById(localUpdatedStory.$key);
+    storyEntryInFirebase.update({title: localUpdatedStory.title, author: localUpdatedStory.author, date: localUpdatedStory.date, imageUrl: localUpdatedStory.imageUrl});
+  }
+
 }

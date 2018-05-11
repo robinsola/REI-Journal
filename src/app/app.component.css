@@ -53,3 +53,7 @@ a:hover {
   background-color: black;
   height: 4px;
 }
+
+.logo a:hover {
+  background-color: white;
+}

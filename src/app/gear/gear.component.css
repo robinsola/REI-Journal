@@ -1,5 +1,6 @@
 button{
   border: none;
+  color: gray;
   background-color: white;
   font-weight: bold;
   margin-bottom: 20px;
@@ -7,5 +8,14 @@ button{
 
 button:hover {
   cursor: pointer;
+  color: black;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: impact;
+}
+
+h5 {
   color: gray;
 }

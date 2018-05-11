@@ -28,4 +28,9 @@
     <option [ngValue]="skills">skills</option>
   </select>
 </div>
-<button (click)="submitForm(newTitle.value, newAuthor.value, newDate.value, newArticle.value, newCategory.value); newTitle.value=''; newAuthor.value=''; newDate.value=''; newArticle.value=''">submit</button>
+<div>
+  <label>Add Image:</label>
+  <br>
+  <input #newImageUrl>
+</div>
+<button (click)="submitForm(newTitle.value, newAuthor.value, newDate.value, newArticle.value, newCategory.value, newImageUrl.value); newTitle.value=''; newAuthor.value=''; newDate.value=''; newArticle.value=''; newImageUrl.value=''">submit</button>

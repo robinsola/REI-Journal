@@ -1,7 +1,8 @@
-<h2>{{(storyToDisplay | async)?.title}}</h2>
 <img src="{{(storyToDisplay | async)?.imageUrl}}">
-<p>{{(storyToDisplay | async)?.author}}, {{(storyToDisplay | async)?.date}}</p>
-<p>Rating: {{(storyToDisplay | async)?.rating}} stars</p>
+<h5><a routerLink="">HOME</a></h5>
+<h1>{{(storyToDisplay | async)?.title}}</h1>
+<h5>{{(storyToDisplay | async)?.author}} // {{(storyToDisplay | async)?.date}}</h5>
+<h5>Rating: {{(storyToDisplay | async)?.rating}} stars</h5>
 <p>{{(storyToDisplay | async)?.article}}</p>
 
 <div>

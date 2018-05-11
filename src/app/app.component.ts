@@ -8,9 +8,4 @@ import { Story } from './models/story.model';
 })
 export class AppComponent {
   title = 'REI Co-op Journal';
-  // selectedStory = null;
-  //
-  // readStory(clickedStory) {
-  //   this.selectedStory = clickedStory;
-  // }
 }

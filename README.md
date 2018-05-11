@@ -9,8 +9,6 @@ The REI Co-op Journal is a blog type website where members can share their stori
 
 > As a user, I want to see more popular highly rated articles before searching for other articles.
 
-> As a user, I want to be able to see a list of articles with introduction text about each one so I don't have to open them to find out what they are about.
-
 > As a user, I want to see an image associated with each article so my eyes can flow with ease throughout the page.
 
 > As a user, I want to write comments on each article so I can interact with the author and other users.
@@ -20,17 +18,23 @@ The REI Co-op Journal is a blog type website where members can share their stori
 Below is an image from my notebook separating the main webpage into its components, including detailed descriptions of what each component will contain.
 ![](readme-plan.JPG)
 * __story-model:__ class Story { constructor(public title: string, public author: string, public date: string, public article: string, public rating: number }
-*  __nav-component:__ list of links for outdoor topics across top page with login button capability. Each link displays a list of stories.
 * __highlights-component:__ includes 3 highlighted stories(title, author, date), each clickable to read the  full-length article.
 * __news-component, gear-component, skills-component:__ all include a clickable image to read full-length article. Has (title, author, date) and teaser-text from article.
 * __full-length-component:__ individual story with title, author, date, full-length article, and rating.
 * __comment-component:__ area under full-length-component. Includes text-area to type out comment about that article, and submit button.
-* __stories-component:__ when clicking the SEE ALL button at the bottom of the main page, a list of all stories will show. Includes photo, title, author, date and teaser. Each is clickable to show its full-length-component.
-
+* __admin-component:__ area for staff to edit and add articles.
 
 ## Installation
 * Clone project folder in terminal: `$ git clone` repository url
 * In terminal, run `$ npm install` in project folder home directory
+* Create firebase project and place your credentials in the app.module.ts:
+`export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};`
+* Upload sample-stories.json to your firebase project.
 * In terminal, run `$ ng serve --open` to view in browser
 
 ## Code scaffolding

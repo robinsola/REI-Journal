@@ -27,4 +27,9 @@ export class StoryService {
     storyEntryInFirebase.update({title: localUpdatedStory.title, author: localUpdatedStory.author, date: localUpdatedStory.date, imageUrl: localUpdatedStory.imageUrl});
   }
 
+  deleteStory(localStoryToDelete) {
+    let storyEntryInFirebase = this.getStoryById(localStoryToDelete.$key);
+    storyEntryInFirebase.remove();
+  }
+
 }

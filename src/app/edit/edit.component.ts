@@ -20,4 +20,10 @@ export class EditComponent implements OnInit {
     this.storyService.updateStory(storyToUpdate);
   }
 
+  beginDeletingStory(storyToDelete) {
+    if(confirm("Are you sure you want to delete this article?")) {
+      this.storyService.deleteStory(storyToDelete);
+    }
+  }
+
 }

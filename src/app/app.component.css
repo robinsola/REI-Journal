@@ -1,8 +1,28 @@
 ul {
     list-style-type: none;
+    text-align: center;
+    margin: 20px 0 10px 0;
 }
 
 li {
   display: inline;
-  padding: 0 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  padding: 10px 10px;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  text-align: center;
+  width: 200px;
+  height: auto
 }

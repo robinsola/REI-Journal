@@ -5,12 +5,12 @@
 <h5>Rating: {{(storyToDisplay | async)?.rating}} stars</h5>
 <p>{{(storyToDisplay | async)?.article}}</p>
 
-<div>
-   <h2>Comments</h2>
-   <label>add comment:</label>
-   <input #newUserComment>
- </div>
- <div>
+<div class="form">
+   <h3>Add Comment</h3>
+   <label>Your Name:</label><br>
+   <input #newUserName><br>
+   <label>Comment:</label><br>
+   <textarea #newUserComment></textarea><br>
    <label>rate article:</label>
    <select #newUserRating>
      <option [value]="1"> 1 star </option>
@@ -18,5 +18,6 @@
      <option [value]="3"> 3 stars </option>
      <option [value]="4"> 4 stars </option>
      <option [value]="5"> 5 stars </option>
-   </select>
- </div>
+   </select><br>
+   <button (click)="submitComment(newUserName.value, newUserComment.value, newUserRating.value); newUserName.value=''; newUserComment.value=''">add</button>
+</div>

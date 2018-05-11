@@ -10,7 +10,7 @@ button {
     transition:.3s;
   }
 
-  button:hover {
+button:hover {
   background-color: black;
   color: white;
 }

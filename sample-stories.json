@@ -1,19 +1,21 @@
 { "stories" : [{
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
-    "author" : "Liz Thomas",
+    "author" : "Joe Cutts",
     "category" : "highlight",
     "date" : "April 27, 2018",
     "id" : "1",
     "rating" : "5",
-    "title" : "What does it take to set a fastest known time?"
+    "title" : "What does it take to set a fastest known time?",
+    "imageUrl" : "https://images.pexels.com/photos/936094/pexels-photo-936094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
-    "author" : "Joe Cutts",
+    "author" : "Liz Ferris",
     "category" : "highlight",
     "date" : "April 26, 2018",
     "id" : "2",
     "rating" : "5",
-    "title" : "5 of the coolest mountain-town mayors"
+    "title" : "5 of the coolest mountain-town mayors",
+    "imageUrl" : "https://images.pexels.com/photos/158316/kinzig-fischer-bach-black-forest-water-158316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo. \n Curabitur fringilla urna ac ultricies maximus. Praesent id imperdiet risus, vulputate pellentesque eros. Maecenas non ornare augue, quis facilisis ante. Aenean varius commodo felis nec maximus. Etiam interdum dignissim mattis. Sed elementum diam ut justo sollicitudin commodo. Donec et pellentesque eros. Duis viverra purus ut gravida dapibus. Suspendisse eu mauris imperdiet, fermentum velit nec, interdum mi. Suspendisse eleifend magna quis nibh facilisis, rutrum pulvinar nisl condimentum. Sed sollicitudin sapien non magna tristique vulputate. Sed posuere luctus ligula placerat convallis. Maecenas blandit, nibh id rhoncus ullamcorper, ipsum urna tristique metus, vel dignissim dui libero sed eros.",
     "author" : "REI Staff",
@@ -21,7 +23,8 @@
     "date" : "May 4, 2018",
     "id" : "3",
     "rating" : "2",
-    "title" : "Explore How We gave back in 2017"
+    "title" : "Explore How We gave back in 2017",
+    "imageUrl" : "https://images.pexels.com/photos/169523/pexels-photo-169523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
     "author" : "Shelby Stanger",
@@ -29,7 +32,8 @@
     "date" : "May 2, 2018",
     "id" : "4",
     "rating" : "2",
-    "title" : "Wild Ideas Worth Living"
+    "title" : "Wild Ideas Worth Living",
+    "imageUrl" : "https://images.pexels.com/photos/461593/pexels-photo-461593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
     "author" : "Megan Michelson",
@@ -37,7 +41,8 @@
     "date" : "April 30, 2018",
     "id" : "5",
     "rating" : "4",
-    "title" : "The Big Sur marathon is the most stunning costal run on Earth"
+    "title" : "The Big Sur marathon is the most stunning costal run on Earth",
+    "imageUrl" : "https://images.pexels.com/photos/248559/pexels-photo-248559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
     "author" : "Ashley Brown",
@@ -45,7 +50,8 @@
     "date" : "May 7, 2018",
     "id" : "6",
     "rating" : "4",
-    "title" : "Sun and Singletrack: Test Riding the Salso Timberjack NX1 Bike"
+    "title" : "Sun and Singletrack: Test Riding the Salso Timberjack NX1 Bike",
+    "imageUrl" : "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
     "author" : "Ken Knapp",
@@ -53,7 +59,8 @@
     "date" : "April 13, 2018",
     "id" : "7",
     "rating" : "2",
-    "title" : "What does moisture-wicking mean?"
+    "title" : "What does moisture-wicking mean?",
+    "imageUrl" : "https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, {
     "article" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a rhoncus libero. Nunc at arcu semper, viverra velit vel, vestibulum erat. Quisque cursus lacinia est vel ultrices. Pellentesque nec ante sit amet dui congue condimentum vel ut ex. Suspendisse sed dui arcu. Nunc ut dignissim ligula. Donec porttitor et mi quis vulputate. Maecenas vitae gravida nunc. Duis maximus auctor eros nec feugiat. Donec elementum est vitae dignissim commodo. Nulla ultrices egestas nisi eu efficitur. Vestibulum id aliquam arcu. Nunc blandit in ligula sed tempus. Suspendisse turpis augue, rhoncus sed risus in, feugiat lobortis nibh. Nunc hendrerit neque ac laoreet semper. Pellentesque et condimentum leo.",
     "author" : "Ken Knapp",
@@ -61,6 +68,7 @@
     "date" : "May 1, 2018",
     "id" : "8",
     "rating" : "2",
-    "title" : "How much does it cost to hike the Pacific Crest Trail"
+    "title" : "How much does it cost to hike the Pacific Crest Trail",
+    "imageUrl" : "https://images.pexels.com/photos/249605/pexels-photo-249605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }]
 }

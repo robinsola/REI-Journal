@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Story } from './models/story.model';
+import { Comment } from './models/comment.model';
 
 @Component({
   selector: 'app-root',

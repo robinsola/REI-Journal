@@ -4,6 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { StoryService } from '../story.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
+import { Comment } from '../models/comment.model';
 
 @Component({
   selector: 'app-full-story',
@@ -13,6 +14,14 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 
 export class FullStoryComponent implements OnInit {
+  Comments: Comment[] = [
+    new Comment('Buddy Miller', 'Sweet article, right on!', '5')
+  ];
+
+  addComment(newComment: Comment) {
+    this.Comments.push(newComment);
+  }
+
   storyId: string;
   storyToDisplay;
 

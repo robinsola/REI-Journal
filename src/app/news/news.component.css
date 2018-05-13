@@ -18,8 +18,13 @@ button:hover {
 h3 {
   text-transform: uppercase;
   font-family: impact;
+  width: 450px;
 }
 
 h5 {
   color: gray;
+}
+
+.row {
+  margin: auto;
 }

@@ -15,17 +15,28 @@ button:hover {
   color: black;
 }
 
-h3 {
-  text-transform: uppercase;
-  font-family: impact;
-}
-
 h5 {
   color: gray;
 }
 
+.highlights img {
+  width: 560px;
+  margin: 0 auto;
+}
+
+.highlights h3 {
+  text-transform: uppercase;
+  font-family: impact;
+  position: absolute;
+  bottom: 68px;
+  background: rgba(0,0,0,0.5);
+  color: #f1f1f1;
+  width: 560px;
+  padding: 20px;
+}
+
 .row {
+  position: relative;
   display: inline-block;
-  padding: 15px;
-  margin: 15px;
+  margin: 3px;
 }

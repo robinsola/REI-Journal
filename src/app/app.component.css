@@ -1,7 +1,8 @@
 h4 {
   background-color: black;
   text-align: right;
-  padding: 10px;
+  padding: 5px 40px 5px 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h4 a {
@@ -20,9 +21,10 @@ ul {
 
 li {
   display: inline;
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 a {

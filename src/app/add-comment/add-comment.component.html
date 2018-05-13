@@ -1,0 +1,16 @@
+<div class="form">
+   <h3>Join the discussion...</h3>
+   <label>Your Name:</label><br>
+   <input #newName><br>
+   <label>Comment:</label><br>
+   <textarea #newPost></textarea><br>
+   <label>rate article:</label>
+   <select #newRating>
+     <option [value]="1"> 1 star </option>
+     <option [value]="2"> 2 stars </option>
+     <option [value]="3"> 3 stars </option>
+     <option [value]="4"> 4 stars </option>
+     <option [value]="5"> 5 stars </option>
+   </select><br>
+   <button (click)="submitComment(newName.value, newPost.value, newRating.value); newName.value=''; newPost.value=''">post comment</button>
+</div>

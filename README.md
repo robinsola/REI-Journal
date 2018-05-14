@@ -1,6 +1,8 @@
 # REI Journal
 Remake of [REI Co-op Journal](https://www.rei.com/blog), generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3. May 2018, Robin Sola.
 
+Check out the live site: http://rei-journal.firebaseapp.com
+
 ## Description
 The REI Co-op Journal is a blog type website where members can share their stories and knowledge on a number of outdoor lifestyle topics, including camping, climbing, snow sports, travel, and more. Blog members are able to log into the website, read news stories, how-to articles, and about top-rated gear related to any of the outdoor topics. Members can also post comments and give ratings each of the stories they read.
 
